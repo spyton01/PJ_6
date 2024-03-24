@@ -3,27 +3,13 @@ import tkinter  as tk
 
 root = tk.Tk()
 root.title("sign up")
-root.geometry('500x300')
+root.geometry('300x200')
 
 
 name=tk.StringVar()
 email=tk.StringVar()
 passw=tk.StringVar()
 
-
-def submit():
- 
-    name=name.get()
-    email=email.get()
-    password=passw.get()
-     
-    print("Your name : " + name)
-    print("Your email : " + email)
-    print("Your password : " + password)
-     
-    name.set("")
-    email.set("")
-    passw.set("")
 
 #entry description
 name_label = tk.Label(root, text='Name')
@@ -35,8 +21,8 @@ email_entry = tk.Entry(root, textvariable=email)
 passw_label = tk.Label(root, text='Password')
 passw_entry = tk.Entry(root, textvariable=passw)
 
-# Button
-sub_btn = tk.Button(root, text='Sign up Now', command=submit)
+# Button layout
+sub_btn = tk.Button(root, text='Sign up Now')
 
 name_label.grid(row=0, column=0)
 name_entry.grid(row=0, column=1)
