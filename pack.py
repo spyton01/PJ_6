@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 
 root = Tk()
-root.title("dogwater calculator")
+root.title("calculator")
 
 #widget for displaying input and output on the top of the window
 e = Entry(root, width=35, borderwidth= 5)
