@@ -11,7 +11,7 @@ email=tk.StringVar()
 passw=tk.StringVar()
 
 
-#label description
+#entry description
 name_label = tk.Label(root, text='Name')
 name_entry = tk.Entry(root, textvariable=name)
 
@@ -19,7 +19,7 @@ email_label = tk.Label(root, text='Email')
 email_entry = tk.Entry(root, textvariable=email)
 
 passw_label = tk.Label(root, text='Password')
-passw_entry = tk.Entry(root, textvariable=passw)
+passw_entry = tk.Entry(root, textvariable=passw, show = '*')
 
 #click bttn
 sub_btn = tk.Button(root, text='Sign up Now')
