@@ -1,8 +1,10 @@
 from tkinter import * 
-from tkinter import ttk
+import tkinter  as tk
 
-root = Tk()
+root = tk.Tk()
 root.title("calculator")
+root.geometry('300x450')
+
 
 #widget for displaying input and output
 e = Entry(root, width=35, borderwidth= 5)
