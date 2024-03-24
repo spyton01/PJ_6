@@ -4,12 +4,11 @@ from tkinter import ttk
 root = Tk()
 root.title("calculator")
 
-#widget for displaying input and output on the top of the window
+#widget for displaying input and output
 e = Entry(root, width=35, borderwidth= 5)
 e.grid(row=0, column=0, columnspan=3, padx= 10, pady= 10)
 
 
-#define functions for button click
 def button_click(number):
     current = e.get()
     e.delete(0, END) 
@@ -55,7 +54,6 @@ def button_equal():
     e.delete(0, END)
 
 
-#add simple if function for each math logic
     if math == "plus":
         e.insert(0, f_num +  int(second_num))
 
@@ -68,8 +66,7 @@ def button_equal():
     if math == "divide":
         e.insert(0, f_num /  int(second_num))
 
-#adjsut columns and rows
-
+#adjsut layout
 button_1 = Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1))
 button_2 = Button(root, text="2", padx=40, pady=20, command=lambda: button_click(2))
 button_3 = Button(root, text="3", padx=40, pady=20, command=lambda: button_click(3))
@@ -89,8 +86,7 @@ button_equal = Button(root, text="=", padx=90, pady=20, command=button_equal)
 button_clear = Button(root, text="CLEAR", padx=77, pady=20, command=button_clear)
 
 
-#put the buttons on screen
-
+#display the buttons on screen
 button_1.grid(row=3, column= 0)
 button_2.grid(row=3, column= 1)
 button_3.grid(row=3, column= 2)
