@@ -3,7 +3,7 @@ import tkinter  as tk
 
 root = tk.Tk()
 root.title("sign up")
-root.geometry('300x200')
+root.geometry('350x200')
 
 
 name=tk.StringVar()
@@ -12,18 +12,19 @@ password=tk.StringVar()
 
 
 #entry description display
-name_label = tk.Label(root, text='Name')
-name_entry = tk.Entry(root, textvariable=name)
+name_label = tk.Label(root, text='Name', font=('Candara'))
+name_entry = tk.Entry(root, textvariable=name, font=('Candara'))
 
-email_label = tk.Label(root, text='Email')
-email_entry = tk.Entry(root, textvariable=email)
+email_label = tk.Label(root, text='Email',font=('Candara'))
+email_entry = tk.Entry(root, textvariable=email, font=('Candara'))
 
-password_label = tk.Label(root, text='Password')
-password_entry = tk.Entry(root, textvariable=password, show = '*')
+password_label = tk.Label(root, text='Password',font=('Candara'))
+password_entry = tk.Entry(root, textvariable=password, show = '*', font=('Candara'))
 
 #click bttn
-sub_btn = tk.Button(root, text='Sign up Now')
+sub_btn = tk.Button(root, text='Sign up Now',font=('Candara'))
 
+#adjust column
 name_label.grid(row=0, column=0)
 name_entry.grid(row=0, column=1)
 
