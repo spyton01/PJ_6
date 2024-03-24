@@ -4,10 +4,12 @@ from tkinter import ttk
 root = Tk()
 root.title("dogwater calculator")
 
+#widget for displaying input and output on the top of the window
 e = Entry(root, width=35, borderwidth= 5)
 e.grid(row=0, column=0, columnspan=3, padx= 10, pady= 10)
 
 
+#define functions for button click
 def button_click(number):
     current = e.get()
     e.delete(0, END) 
@@ -52,7 +54,8 @@ def button_equal():
     second_num = e.get()
     e.delete(0, END)
 
- #add simple if function for each math logic
+
+#add simple if function for each math logic
     if math == "plus":
         e.insert(0, f_num +  int(second_num))
 
